@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Recipe Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 2.2;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+      background-color: #80393C;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      color: #cc0000;
+    }
+
+    .module-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .module-step {
+      display: none;
+    }
+
+    .active-step {
+      display: block;
+    }
+
+    .button-container {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button.next {
+      background-color: #cc0000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <header>
+    <h1>Accessible Recipe Website</h1>
+
+  </header>
+
+  <main>
+    <h2>Recipe Title</h2>
+    <img src="food-image.jpg" alt="Delicious Food">
+
+    <section>
+      <h2>Ingredients</h2>
+      <ul>
+        <li>Ingredient 1</li>
+        <li>Ingredient 2</li>
+        <li>Ingredient 3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Instructions</h2>
+      <ol>
+        <li>Step 1: Lorem ipsum dolor sit amet.</li>
+        <li>Step 2: Consectetur adipiscing elit.</li>
+        <li>Step 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+      </ol>
+    </section>
+  </main>
+
+  <div class="module-container">
+    <div class="module-step active-step" id="step1">
+      <h2>Step 1</h2>
+      <p>This is the content of step 1.</p>
+      <div class="button-container">
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step2">
+      <h2>Step 2</h2>
+      <p>This is the content of step 2.</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step3">
+      <h2>Step 3</h2>
+      <p>This is the content of step 3.</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentStep = 1;
+
+    function showStep(stepNumber) {
+      // Hide all steps
+      const steps = document.querySelectorAll('.module-step');
+      steps.forEach(step => step.classList.remove('active-step'));
+
+      // Show the current step
+      const currentStepElement = document.getElementById(`step${stepNumber}`);
+      currentStepElement.classList.add('active-step');
+    }
+
+    function nextStep() {
+      if (currentStep < 3) {
+        currentStep++;
+        showStep(currentStep);
+      }
+    }
+
+    function prevStep() {
+      if (currentStep > 1) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    }
+  </script>
+</body>
+</html>
