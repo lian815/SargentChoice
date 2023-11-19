@@ -35,6 +35,7 @@ This entails:
 Due to time constraints and our limited experience with coding, we created a prototype that showcases one recipe chosen by us and how they would be modified to be more accessible. We hope that in the future this website can use any recipe found online and convert them into this accessible format. 
 
 References
+
 American Occupational Therapy Association. (2020). Occupational therapy practice framework: Domain and process (4th ed.). American Journal of Occupational Therapy, 74(Suppl. 2), 7412410010. https://doi.org/10.5014/ajot.2020.74S2001
 Delussey, S. (2023). 8 Cooking Skills and Activities for any Age. Exceptional Parent, 53(2), 
 40–41. 
