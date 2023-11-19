@@ -34,14 +34,14 @@ This entails:
 
 Due to time constraints and our limited experience with coding, we created a prototype that showcases one recipe chosen by us and how they would be modified to be more accessible. We hope that in the future this website can use any recipe found online and convert them into this accessible format. 
 
-References
+References <br><br>
 
-American Occupational Therapy Association. (2020). Occupational therapy practice framework: Domain and process (4th ed.). American Journal of Occupational Therapy, 74(Suppl. 2), 7412410010. https://doi.org/10.5014/ajot.2020.74S2001
+American Occupational Therapy Association. (2020). Occupational therapy practice framework: Domain and process (4th ed.). American Journal of Occupational Therapy, 74(Suppl. 2), 7412410010. https://doi.org/10.5014/ajot.2020.74S2001 <br>
 Delussey, S. (2023). 8 Cooking Skills and Activities for any Age. Exceptional Parent, 53(2), 
 40–41. 
 https://web-p-ebscohost-com.ezproxy.bu.edu/ehost/pdfviewer/pdfviewer?vid=3&sid=ffd0
-909d-b128-493d-9ce7-5b81667d10a2%40redis
-Farmer, N., & Cotter, E. W. (2021). Well-Being and Cooking Behavior: Using the Positive Emotion, Engagement, Relationships, Meaning, and Accomplishment (PERMA) Model as a Theoretical Framework. Frontiers in psychology, 12, 560578. https://doi.org/10.3389/fpsyg.2021.560578
+909d-b128-493d-9ce7-5b81667d10a2%40redis <br>
+Farmer, N., & Cotter, E. W. (2021). Well-Being and Cooking Behavior: Using the Positive Emotion, Engagement, Relationships, Meaning, and Accomplishment (PERMA) Model as a Theoretical Framework. Frontiers in psychology, 12, 560578. https://doi.org/10.3389/fpsyg.2021.560578 <br>
 Office of Disease Prevention and Health Promotion (OASH). (2016, June 8). Display content 
 clearly on the page. Use a readable font that’s at least 16 pixels. - Health Literacy 
 Online. https://health.gov/healthliteracyonline/display/section-3-3/ 
