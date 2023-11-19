@@ -32,10 +32,9 @@ This entails:
   - Other adaptive equipment like adapted cutting boards where food is stabilized can minimize use of other hands 
 
 
-Due to time constraints and our limited experience with coding, we created a prototype that showcases one recipe chosen by us and how they would be modified to be more accessible. We hope that in the future this website can use any recipe found online and convert them into this accessible format. 
+Due to time constraints and our limited experience with coding, we created a prototype that showcases one recipe chosen by us and how they would be modified to be more accessible. We hope that in the future this website can use any recipe found online and convert them into this accessible format. <br><br>
 
-References <br><br>
-
+References <br>
 American Occupational Therapy Association. (2020). Occupational therapy practice framework: Domain and process (4th ed.). American Journal of Occupational Therapy, 74(Suppl. 2), 7412410010. https://doi.org/10.5014/ajot.2020.74S2001 <br>
 Delussey, S. (2023). 8 Cooking Skills and Activities for any Age. Exceptional Parent, 53(2), 
 40–41. 
