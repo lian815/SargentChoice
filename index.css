@@ -1,3 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 2.2;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #80393C;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #cc0000;
+  
+}
+
+
+.module-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.module-step {
+  display: none;
+}
+
+.active-step {
+  display: block;
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: right;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.next {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+
 /* Style navigation bar */
 .navbar {
   width: 100%;
@@ -28,9 +102,34 @@
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .navbar a {
     float: none;
     display: block;
   }
+}
+
+#ingredient {
+	width: 20px;
+	height: 20px;
+}
+
+#tools {
+	width: 20px;
+	height: 20px;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#myBar {
+  width: 10%;
+  height: 50px;
+  background-color: #32CD32;
 }
