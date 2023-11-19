@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anyone Can Cook</title>
+ 
+</head>
+<body>
+  <div class="navbar">
+    <a class="active" href="test2.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="OurTeam.html"><i class="fa fa-fw fa-user"></i> Our Team</a>
+    <a href="OurMission.html"><i class="fa fa-fw fa-heart"></i> Our Mission</a>
+  </div>
+
+  <header>
+    <h1>Anyone Can Cook!</h1>
+    <h3>• an accessible cooking guide •</h3>
+
+  </header>
+
+  <main>
+    <h2>Raspberry Hand Pies</h2>
+    <img src="raspberry-hand-pies-image.jpg" alt="Delicious Food">
+
+    <section>
+      <h2>Ingredients</h2>
+
+      <form action="/action_page.php">
+        <label class="container">
+        <input type="checkbox" id="ingredient" name="ingredient1" value="1 package frozen puff pastry, thawed according to package">
+        <label for="ingredient1"> 1 package frozen puff pastry, thawed according to package</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient2" value="1/3 cup granulated sugar">
+        <label for="ingredient2"> 1/3 cup granulated sugar</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient3" value="2 tablesoons cornstarch">
+        <label for="ingredient3"> 2 tablesoons cornstarch</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient4" value="12 ounces raspberries, washed">
+        <label for="ingredient4"> 12 ounces raspberries, washed</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient5" value="1/2 teaspoon lemon juice">
+        <label for="ingredient5"> 1/2 teaspoon lemon juice</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient6" value="1 large egg">
+        <label for="ingredient6"> 1 large egg</label><br>
+      </form>
+
+    </section>
+
+    <section>
+      <h2>Tools Needed</h2>
+
+      <form action="/action_page.php">
+        <label class="container">
+        <input type="checkbox" id="tools" name="tool1" value="Baking sheet">
+        <label for="ingredient1"> Baking sheet</label><br>
+        <input type="checkbox" id="tools" name="tool2" value="Parchment paper">
+        <label for="ingredient2"> Parchment paper</label><br>
+        <input type="checkbox" id="tools" name="tool3" value="Oven">
+        <label for="ingredient3"> Oven</label><br>
+        <input type="checkbox" id="tools" name="tool4" value="1 small bowl">
+        <label for="ingredient4"> 1 small bowl</label><br>
+        <input type="checkbox" id="tools" name="tool5" value="1 large bowl">
+        <label for="ingredient5"> 1 large bowl</label><br>
+        <input type="checkbox" id="tools" name="tool6" value="Measuring cups">
+        <label for="ingredient6"> Measuring cups</label><br>
+        <input type="checkbox" id="tools" name="tool7" value="Tablespoons and teaspoons">
+        <label for="ingredient6"> Tablespoons and teaspoons</label><br>
+        <input type="checkbox" id="tools" name="tool8" value="Fork">
+        <label for="ingredient6"> Fork</label><br>
+        <input type="checkbox" id="tools" name="tool9" value="Spatula">
+        <label for="ingredient6"> Spatula</label><br>
+      </form>
+
+    </section>
+  </main>
+
+  <div class="module-container">
+    <div class="module-step active-step" id="step1">
+      <img src="oven-400.jpg">
+      <h2 style="font-size: 32px;"> Step 1</h2>
+      <p style="font-size: 25px;"> Preheat oven to 400ºF </p>
+      <div class="button-container">
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step2">
+      <img src="parchment-paper.jpg">
+      <h2 style="font-size: 32px;"> Step 2</h2>
+      <p style="font-size: 25px;"> Line a baking sheet with parchment paper</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step3">
+      <img src="puff-pastry-squares.jpg">
+      <h2 style="font-size: 32px;"> Step 3</h2>
+      <p style="font-size: 25px;"> Unfold puff pastry sheet and cut out 4 squares</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step4">
+      <img src="puff-pastry-on-baking-sheet.jpg">
+      <h2 style="font-size: 32px;"> Step 4</h2>
+      <p style="font-size: 25px;"> Place pastry squares onto the prepared baking sheet</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step5">
+      <img src="egg-wash.jpg">
+      <h2 style="font-size: 32px;"> Step 5</h2>
+      <p style="font-size: 25px;"> Crack 1 egg into small bowl, whisk thoroughly with a fork, and set aside egg mixture</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step6">
+      <img src="sugar-bowl.jpg">
+      <h2 style="font-size: 32px;"> Step 6</h2>
+      <p style="font-size: 25px;"> Place 1/3 cup granulated sugar into a large bowl</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step7">
+      <img src="cornstarch-sugar.jpg">
+      <h2 style="font-size: 32px;"> Step 7</h2>
+      <p style="font-size: 25px;"> Add 2 tablespoons of cornstarch to the sugar and stir with spatula to combine</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step8">
+      <img src="raspberry-bowl.jpg">
+      <h2 style="font-size: 32px;"> Step 8</h2>
+      <p style="font-size: 25px;"> Add 12 ounces of raspberries and 1/2 teaspoon lemon juice to sugar/cornstarch mixture and mix ingredients</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step9">
+      <img src="rasp-filling.jpg">
+      <h2 style="font-size: 32px;"> Step 9</h2>
+      <p style="font-size: 25px;"> Spoon raspberry filling into one half of each of the pastry square</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step10">
+      <img src="eggwash-on-edges.jpg">
+      <h2 style="font-size: 32px;"> Step 10</h2>
+      <p style="font-size: 25px;"> Brush edges of pastry squares with egg mixture</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step11">
+      <img src="crimping.jpg">
+      <h2 style="font-size: 32px;"> Step 11</h2>
+      <p style="font-size: 25px;"> Fold dough over raspberry filling and crimp edges with a fork to seal</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step12">
+      <img src="3-vents.jpg">
+      <h2 style="font-size: 32px;"> Step 12</h2>
+      <p style="font-size: 25px;"> Cut 3 small vents on top of each hand pie</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step13">
+      <img src="sugar-on-handpie.jpg">
+      <h2 style="font-size: 32px;"> Step 13</h2>
+      <p style="font-size: 25px;"> Sprinkle the tops of the pies with sugar</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step14">
+      <img src="handpies-in-oven.jpg">
+      <h2 style="font-size: 32px;"> Step 14</h2>
+      <p style="font-size: 25px;"> Bake until golden, around 20-25 minutes</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="module-step" id="step15">
+      <img src="cooling-rack.jpg">
+      <h2 style="font-size: 32px;"> Step 15</h2>
+      <p style="font-size: 25px;"> Let cool for around 10 minutes. Enjoy!</p>
+      <div class="button-container">
+        <button onclick="prevStep()">Previous</button>
+        <button class="next" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+  </div>
+
+<script src="index.js"> </script>
+
+<!--   <script>
+    let currentStep = 1;
+
+    function showStep(stepNumber) {
+      // Hide all steps
+      const steps = document.querySelectorAll('.module-step');
+      steps.forEach(step => step.classList.remove('active-step'));
+
+      // Show the current step
+      const currentStepElement = document.getElementById(`step${stepNumber}`);
+      currentStepElement.classList.add('active-step');
+    }
+
+    function nextStep() {
+      if (currentStep < 15) {
+        currentStep++;
+        showStep(currentStep);
+      }
+    }
+
+    function prevStep() {
+      if (currentStep > 1) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    }
+  </script> -->
+
+<div id="myProgress">
+  <div id="myBar">Progress</div>
+</div>
+
+</body>
+</html>
