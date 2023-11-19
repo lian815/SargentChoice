@@ -1,95 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div class="navbar">
-  <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#About Us"><i class="fa fa-fw fa-user"></i> About Us</a>
-  <a href="#Our Mission"><i class="fa fa-fw fa-heart"></i> Our Mission</a>
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-</div>
-
 <head>
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anyone Can Cook</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-      line-height: 2.2;
-      margin: 0;
-      padding: 0;
-      transition: background-color 0.3s, color 0.3s;
-      background-color: #80393C;
-    }
-
-    header {
-      background-color: black;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    img {
-      max-width: 50%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    h2 {
-      color: #cc0000;
-
-    }
-
-    .module-container {
-      max-width: 1000px;
-      margin: 50px auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    .module-step {
-      display: none;
-    }
-
-    .active-step {
-      display: block;
-    }
-
-    .button-container {
-      margin-top: 20px;
-      text-align: right;
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button.next {
-      background-color: #cc0000;
-      color: white;
-      border: none;
-      border-radius: 4px;
-    }
-  </style>
+ 
 </head>
-<body class="light-mode">
+<body>
+  <div class="navbar">
+    <a class="active" href="test2.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="OurTeam.html"><i class="fa fa-fw fa-user"></i> Our Team</a>
+    <a href="OurMission.html"><i class="fa fa-fw fa-heart"></i> Our Mission</a>
+  </div>
+
   <header>
     <h1>Anyone Can Cook!</h1>
     <h3>• an accessible cooking guide •</h3>
@@ -102,29 +28,50 @@
 
     <section>
       <h2>Ingredients</h2>
-      <ul>
-        <li>1 package frozen puff pastry, thawed according to package</li>
-        <li>1/3 cup granulated sugar</li>
-        <li>2 tablesoons cornstarch</li>
-        <li>12 ounces raspberries, washed</li>
-        <li>1/2 teaspoon lemon juice</li>
-        <li>1 large egg</li>
-      </ul>
+
+      <form action="/action_page.php">
+        <label class="container">
+        <input type="checkbox" id="ingredient" name="ingredient1" value="1 package frozen puff pastry, thawed according to package">
+        <label for="ingredient1"> 1 package frozen puff pastry, thawed according to package</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient2" value="1/3 cup granulated sugar">
+        <label for="ingredient2"> 1/3 cup granulated sugar</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient3" value="2 tablesoons cornstarch">
+        <label for="ingredient3"> 2 tablesoons cornstarch</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient4" value="12 ounces raspberries, washed">
+        <label for="ingredient4"> 12 ounces raspberries, washed</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient5" value="1/2 teaspoon lemon juice">
+        <label for="ingredient5"> 1/2 teaspoon lemon juice</label><br>
+        <input type="checkbox" id="ingredient" name="ingredient6" value="1 large egg">
+        <label for="ingredient6"> 1 large egg</label><br>
+      </form>
+
     </section>
 
     <section>
       <h2>Tools Needed</h2>
-      <ul>
-        <li>Baking Sheet</li>
-        <li>Parchment Paper</li>
-        <li>Oven</li>
-        <li>1 small bowl</li>
-        <li>1 large bowl</li>
-        <li>measuring cups</li>
-        <li>tablespoons and teaspoons</li>
-        <li>fork</li>
-        <li>spatula</li>
-      </ul>
+
+      <form action="/action_page.php">
+        <label class="container">
+        <input type="checkbox" id="tools" name="tool1" value="Baking sheet">
+        <label for="ingredient1"> Baking sheet</label><br>
+        <input type="checkbox" id="tools" name="tool2" value="Parchment paper">
+        <label for="ingredient2"> Parchment paper</label><br>
+        <input type="checkbox" id="tools" name="tool3" value="Oven">
+        <label for="ingredient3"> Oven</label><br>
+        <input type="checkbox" id="tools" name="tool4" value="1 small bowl">
+        <label for="ingredient4"> 1 small bowl</label><br>
+        <input type="checkbox" id="tools" name="tool5" value="1 large bowl">
+        <label for="ingredient5"> 1 large bowl</label><br>
+        <input type="checkbox" id="tools" name="tool6" value="Measuring cups">
+        <label for="ingredient6"> Measuring cups</label><br>
+        <input type="checkbox" id="tools" name="tool7" value="Tablespoons and teaspoons">
+        <label for="ingredient6"> Tablespoons and teaspoons</label><br>
+        <input type="checkbox" id="tools" name="tool8" value="Fork">
+        <label for="ingredient6"> Fork</label><br>
+        <input type="checkbox" id="tools" name="tool9" value="Spatula">
+        <label for="ingredient6"> Spatula</label><br>
+      </form>
+
     </section>
   </main>
 
@@ -274,36 +221,15 @@
       <p style="font-size: 25px;"> Let cool for around 10 minutes. Enjoy!</p>
       <div class="button-container">
         <button onclick="prevStep()">Previous</button>
-        <button class="next" onclick="nextStep()">Next</button>
       </div>
     </div>
   </div>
-  <script>
-    let currentStep = 1;
 
-    function showStep(stepNumber) {
-      // Hide all steps
-      const steps = document.querySelectorAll('.module-step');
-      steps.forEach(step => step.classList.remove('active-step'));
+<script src="index.js"> </script>
 
-      // Show the current step
-      const currentStepElement = document.getElementById(`step${stepNumber}`);
-      currentStepElement.classList.add('active-step');
-    }
+<div id="myProgress">
+  <div id="myBar">Progress</div>
+</div>
 
-    function nextStep() {
-      if (currentStep < 15) {
-        currentStep++;
-        showStep(currentStep);
-      }
-    }
-
-    function prevStep() {
-      if (currentStep > 1) {
-        currentStep--;
-        showStep(currentStep);
-      }
-    }
-  </script>
 </body>
 </html>
